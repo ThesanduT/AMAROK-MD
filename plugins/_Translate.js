@@ -1,3 +1,6 @@
+//---------------------_-------
+//-------NEW UPDATE
+//---------------------_-------
                                  const Amarok = require('../lib/events');
                                  const {
                                  translate
