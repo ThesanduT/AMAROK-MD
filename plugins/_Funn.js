@@ -20,7 +20,7 @@ Amarok.addCMD({
     //---------DARE GAME
     //---------------------------------------------------------------------------
 
- Amarok.addCDM({
+ Amarok.addCMD({
             pattern: "dare",
             isOwner: false,
             desc: "dare same as the truth",
@@ -34,7 +34,7 @@ Amarok.addCMD({
  //-----------FACT GAME 
  //---------------------------------------------------------------------------
 
-Amarok.addCDM({
+Amarok.addCMD({
         pattern: "fact",
         isOwner: false,
         desc: "fact on everything",
