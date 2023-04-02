@@ -160,4 +160,4 @@ Amarok.addCMD({
 					showAdAttribution: true
 					}
 				}
-			}, {quoted: conn.data}) });																						});
+			}, {quoted: conn.data}) 																						});
