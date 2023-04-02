@@ -6,10 +6,10 @@ const Amarok = require('../lib')
  //------TRUTH GAME
  //---------------------------------------------------------------------------
 
-Amarok.addCDM({
+Amarok.addCMD({
             pattern: "truth",
             isOwner: false,
-            desc: "",
+            desc: "truth game",
             
         },
         async(conn, match, text) => {
@@ -23,7 +23,7 @@ Amarok.addCDM({
  Amarok.addCDM({
             pattern: "dare",
             isOwner: false,
-            desc: "",
+            desc: "dare same as the truth",
         },
         async(conn, match, text) => {
             return await conn.reply(`${dare()}`);
@@ -37,7 +37,7 @@ Amarok.addCDM({
 Amarok.addCDM({
         pattern: "fact",
         isOwner: false,
-        desc: "",
+        desc: "fact on everything",
         
     },
     async(conn, match, text) => {
