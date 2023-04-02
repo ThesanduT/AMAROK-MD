@@ -9,9 +9,34 @@ const { runtime, prefix } = require("../lib/bot");
 const git = simpleGit();
 const exec = require("child_process").exec;
 
-Bosco.addCMD(
+Amarok.addCMD(
+  {       pattern: "restart",
+          isOwner: true,
+          desc: "restarting",
+          type: "heroku",
+ },
+ async(message,match) => {
+  const buttons = [
+  {buttonId: '${PREFIX}m', buttonText: {displayText: 'RESTART'}, type: 1},
+  {buttonId: '${PREFIX}st', buttonText: {displayText: 'SHUTDOWN'}, type: 1}
+]
+let buttonMessage = {
+    text: `HEROKU MANAGER `,
+    footer: 'AMAROK SYSTEM',
+    buttons: buttons,
+    headerType: 1
+}
+
+return await conn.sendMessage(conn.chatld, buttonMessage, { react: { text: "😎", key: conn.key, 
+quoted: conn.data
+}})
+});
+
+
+//---------------------------------------
+Amarok.addCMD(
 	{
-		pattern: "restart",
+		pattern: "m",
 		isOwner: true,
 		desc: "Restart Bot",
 		type: "heroku",
@@ -24,9 +49,9 @@ Bosco.addCMD(
 				}
 				);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
-		pattern: "shutdown",
+		pattern: "st",
 		isOwner: true,
 		desc: "Dyno off",
 		type: "heroku",
@@ -48,7 +73,7 @@ Bosco.addCMD(
 				}
 				);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: 'dyno',
 		isOwner: true,	
@@ -81,7 +106,7 @@ Bosco.addCMD(
 								}); 
 								
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "setvar ?(.*)",
 		isOwner: true,
@@ -110,7 +135,7 @@ Bosco.addCMD(
 				}
 				);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "delvar ?(.*)",
 		isOwner: true,
@@ -140,7 +165,7 @@ Bosco.addCMD(
 					}
 					);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "getvar ?(.*)",
 		isOwner: true,
@@ -167,7 +192,7 @@ Bosco.addCMD(
 				}
 				);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "allvar",
 		isOwner: true,
@@ -190,7 +215,7 @@ Bosco.addCMD(
 			}
 			);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "update ?(.*)",
 		isOwner: true,
@@ -244,7 +269,7 @@ const buttons = [
 
 let buttonMessage = {
     text: availupdate,
-    footer: 'bosco-md',
+    footer: 'amarok-md',
     buttons: buttons,
     headerType: 1
 }
