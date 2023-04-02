@@ -7,7 +7,7 @@
                                  } = require('@vitalets/google-translate-api');
                const defaultLang = 'en'
 
-     Amarok.addCDM(
+     Amarok.addCMD(
       {
       pattern: "tr",
       fromMe: true,
