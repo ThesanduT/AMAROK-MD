@@ -24,12 +24,15 @@
 						"required": true },
 						"HANDLERS": {
 							"description": "prefix !",
-							"value": ".", 
+							"value": " ^[.,]",
 							"required": true },
 							"SEND_READ": {
 								"description": "If entered true , bot will mark messages as read",
 								"value": "true", 
 								"required": true },
+                                                                GPTAPIKEY: {
+                                                                        "description": "Add api key for chatgpt",
+                                                                        "required": false
 								"HEROKU": { 
 									"description": "",
 									"value": "true", 
