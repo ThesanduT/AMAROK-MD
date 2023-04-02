@@ -15,7 +15,7 @@ Amarok.addCMD({
    let [date, time] = new Date()
       .toLocaleString("en-IN", { timeZone: "Africa/Johannesburg" })
       .split(",");
-  CMD_ALIVE = `
+  CMD_ALIVE+= `
  
 
  *🚦Botname: ${BOT_NAME}
