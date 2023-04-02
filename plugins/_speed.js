@@ -11,9 +11,9 @@ Amarok.addCMD(
 },
 async (conn, match) => {
 	var start = new Date().getTime();
-	await conn.sendMessage(conn.chatId, {text:'```Ping!```'});
+	await conn.sendMessage(conn.chatId, {text:'Ꮪᴘᴇᴇᴅ Sᴘᴏʀᴛɪɴɢ'});
 	var end = new Date().getTime();
-	await conn.reply('*Pong!*\n```' + (end - start) + 'ms```');
+	await conn.reply('GeττᎥng ' + (end - start) + 'ᴍs');
 	});
 
 Amarok.addCMD(
