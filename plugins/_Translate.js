@@ -1,4 +1,4 @@
-                                 const { Amarok } = require('../lib');
+                                 const Amarok = require('../lib/events');
                                  const {
                                  translate
                                  } = require('@vitalets/google-translate-api');
