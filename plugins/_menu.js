@@ -40,9 +40,6 @@ Amarok.addCMD({
 	dontAddCommandList: true 
 	}, 
 	async (conn, match) => {
-           let [date, time] = new Date()
-        .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
-        .split(",");
 		var CMD_MENU = ''
 		let games = ''
 		let group = ''
@@ -139,7 +136,7 @@ Amarok.addCMD({
 ┃
 ┃
 ┗━━━━━━━━━━━╾ᐧᐧᐧᐧ⦿
-`;
+`
    await conn.sendMessage(conn.chatId, {
       image: { url: 'https://telegra.ph/file/6086f101a36f7fc14bff6.png', },
       caption: CMD_MENU.trim(),
