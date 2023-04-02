@@ -1,6 +1,6 @@
 const Amarok = require('../lib/events');
 const fs = require("fs");
-const { runtime, getBuffer} = require('../lib/bot');
+const { runtime, getBuffer} = require('../lib/index');
 
 Amarok.addCMD(
 	{
