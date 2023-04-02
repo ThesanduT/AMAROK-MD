@@ -5,7 +5,7 @@
  const  Amarok = require("../lib/events")
 const axios = require("axios")
 
-Amarok.addCDM({ pattern: "git", isOwner: false, desc: "",}, async(conn,match) => {
+Amarok.addCMD({ pattern: "git", isOwner: false, desc: "",}, async(conn,match) => {
 let { data } = await axios.get(`https://api.github.com/repos/Diegoson/AMAROK-MD`)
 const buttons = [
   {buttonId: 'ping', buttonText: {displayText: 'SPEED'}, type: 1},
