@@ -84,11 +84,10 @@ Amarok.addCMD({
 														CMD_MENU +=`
 										
 ┏━━━━━⟪ ${BOT_NAME} ⟫━━━⦿
-┃ ✗ *OWNER* : ${OWNER_NAME}
-┃ ✗ *PREFIX* : ${HANDLERS}
-┃ ✗ *USER* : ${conn.data.pushName}
-┃ ✗ *DATE* : ${date}
-┃ ✗ *TIME* : ${time}
+┃ ✗ OWNER : ${OWNER_NAME}
+┃ ✗ PREFIX : ${HANDLERS}
+┃ ✗ USER : ${conn.data.pushName}
+┃ ✗ VERSION : ${pjson.version}
 ┗━━━━━━━━━━━━━━━⦿
 ┏━━━『 *UPDATED* 』━━━❖
 ╽
