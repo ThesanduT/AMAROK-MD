@@ -27,7 +27,7 @@ Amarok.addCMD({
  *🏅Useer: ${conn.data.pushName}
  *🚦Runtime ${runtime(process(uptime())}
  *🚦Working hours: ${clockString (uptime())}
-`;
+`
 
 await conn.sendMessage(conn.chatId, {
       image: { url: 'https://i.ibb.co/6yVCHcL/38aa5206e8bc.jpg', },
