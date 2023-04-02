@@ -49,4 +49,4 @@ await conn.sendMessage(conn.chatId, {
 					showAdAttribution: true
 					}
 				}
-			}, {quoted: conn.data})	
+			}, {quoted: conn.data})	});
