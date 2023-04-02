@@ -1,10 +1,10 @@
-const Bosco = require('../lib/events')
+const Amarok = require('../lib/events')
 const axios = require("axios");
 const Config = require('../config');
 const pjson = require('../package.json'); 
 const { runtime, getBuffer} = require('../lib/bot');
 
-Bosco.addCMD({
+Amarok.addCMD({
 	pattern: 'help',
 	desc: '',
 	isOwner: false,
@@ -13,7 +13,7 @@ Bosco.addCMD({
 	async (conn, match) => {
 		var CMD_HELP = '';
 		var num = 1  
-		Bosco.commands.map(
+		Amarok.commands.map(
 			async (command) =>  {
 				if (command.dontAddCommandList || command.pattern === undefined) return;
 				try {
@@ -27,27 +27,30 @@ Bosco.addCMD({
 							} else {
 								HANDLER = Config.HANDLERS
 								}
-								CMD_HELP += '' + num++ + '. ' + match + '\n' + command.desc + '\n\n'
+								CMD_HELP += '' + num++ + '. ' + match + '
 								}
 								);
 								await conn.sendMessage(conn.chatId, { text : CMD_HELP.trim() }, { quoted: conn.data });
 								});
 
-Bosco.addCMD({
+Amarok.addCMD({
 	pattern: 'menu',
 	desc: '',
 	isOwner: false,
 	dontAddCommandList: true 
 	}, 
 	async (conn, match) => {
+           let [date, time] = new Date()
+        .toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })
+        .split(",");
 		var CMD_MENU = ''
-		let download = ''
+		let games = ''
 		let group = ''
 		let misc = ''
 		let heroku = ''
 		let search = ''
 		let convert = ''
-		Bosco.commands.map(
+		Amarok.commands.map(
 			async (command) =>  {
 				if (command.dontAddCommandList || command.pattern === undefined) return;
 				try {
@@ -62,83 +65,99 @@ Bosco.addCMD({
 								HANDLER = Config.HANDLERS
 								}
 								if (command.type === 'download') {
-									download += `▢ ${HANDLER}${match}\n┊`
+									download += `❒✗ ${HANDLER}${match}\n┊`
 									}
 									if (command.type === 'group') {
-										group += `▢ ${HANDLER}${match}\n┊`
+										group += `❒✗ ${HANDLER}${match}\n┊`
 										}
 										if (command.type === 'heroku') {
-											heroku += `▢ ${HANDLER}${match}\n┊`
+											heroku += `❒✗ ${HANDLER}${match}\n┊`
 											}
 											if (command.type === 'search') {
-												search += `▢ ${HANDLER}${match}\n┊`
+												search += `❒✗ ${HANDLER}${match}\n┊`
 												}
 												if (command.type === 'convert') {
-													convert += `▢ ${HANDLER}${match}\n┊`
+													convert += `❒✗ ${HANDLER}${match}\n┊`
 													}
 													if (command.type === 'misc' || command.type === '' || !command.type === '') {
-														misc += `▢ ${HANDLER}${match}\n┊`
+														misc += `❒✗ ${HANDLER}${match}\n┊`
 														}         
 														}
 														);
 														CMD_MENU +=`
 										
-
-┌─────〔 𝖒𝖊𝖓𝖚 〕
-┊ 
-┊  ʜᴇʟʟᴏ ${conn.data.pushName}
-┊ 
-┊ 
-┊ ʙᴏᴛ : Bosco-md
-┊ ᴍᴏᴅᴇ : ${Config.WORKTYPE}
-┊ ᴠᴇʀꜱɪᴏɴ : ${pjson.version}
-┊ ᴩʟᴜɢɪɴꜱ : ${Bosco.commands.length}
-┊ ʀᴜɴᴛɪᴍᴇ : ${runtime(process.uptime())}
-┊
-└────────────────────𔒝
-┌─────〔 𝖌𝖗𝖔𝖚𝖕 〕
-┊  
-┊${group}
-└────────────────────𔒝
-┌─────〔 𝖉𝖔𝖜𝖓𝖑𝖔𝖆𝖉 〕
-┊  
-┊${download}
-└────────────────────𔒝
-┌─────〔 𝖒𝖎𝖘𝖈 〕
-┊  
-┊${misc}
-└────────────────────𔒝
-┌─────〔 𝖍𝖊𝖗𝖔𝖐𝖚 〕
-┊  
-┊${heroku}
-└────────────────────𔒝
-┌─────〔 𝖈𝖔𝖓𝖛𝖊𝖗𝖙 〕
-┊  
-┊${convert}
-└────────────────────𔒝
-┌─────〔 𝖘𝖊𝖆𝖗𝖈𝖍 〕
-┊  
-┊${search}
-└────────────────────𔒝
+┏━━━━━⟪ ${BOT_NAME} ⟫━━━⦿
+┃ ✗ *OWNER* : ${OWNER_NAME}
+┃ ✗ *PREFIX* : ${HANDLERS}
+┃ ✗ *USER* : ${conn.data.pushName}
+┃ ✗ *DATE* : ${date}
+┃ ✗ *TIME* : ${time}
+┗━━━━━━━━━━━━━━━⦿
+┏━━━『 *UPDATED* 』━━━❖
+╽
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ᴄᴏɴᴠᴇʀᴛᴇʀ ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${convert}
+┃╰─────────────◆
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ᴍɪᴄs ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${mics}
+┃╰─────────────◆
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ɢᴀᴍᴇs ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${games}
+┃╰─────────────◆
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ɢʀᴏᴜᴘ ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${group}
+┃╰─────────────◆
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ʜᴇʀᴏᴋᴜ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${heroku}
+┃╰─────────────◆
+┃
+┃┏━━━━━━━━━━━━━◆
+┣┫ *❃---- ꜱᴇᴀʀᴄʜ ----✯*
+┃┗┯━━━━━━━━━━━━◆
+┠┬┤
+┃│   ${search}
+┃╰─────────────◆
+┃
+┃
+┗━━━━━━━━━━━╾ᐧᐧᐧᐧ⦿
 `
    await conn.sendMessage(conn.chatId, {
-      image: { url: 'https://telegra.ph/file/a2c59c0a297f262976506.jpg', },
+      image: { url: 'https://telegra.ph/file/6086f101a36f7fc14bff6.png', },
       caption: CMD_MENU.trim(),
-      footer: `bosco-md`,
+      footer: `amarok-md`,
       buttons: [
-        {buttonId: `${PREFIX}owner`, buttonText: {displayText: 'OWNER'}},
-      {buttonId: `${PREFIX}ping`, buttonText: {displayText: 'PING'}}
+        {buttonId: `${PREFIX}ping`, buttonText: {displayText: 'SPEED'}},
+      {buttonId: `${PREFIX}alive`, buttonText: {displayText: 'ALIVE'}}
     ],
     
     contextInfo: {
 				externalAdReply: {
-					title:  "BOSCO-MD",
+					title:  "AMAROK-MD",
 					body: "",
 					mediaType: 2,
-					thumbnail: await getBuffer('https://telegra.ph/file/a2c59c0a297f262976506.jpg'),
-					mediaUrl: 'https://github.com/pepesir/BOSCO-MD',
-					sourceUrl: 'https://github.com/pepesir/BOSCO-MD',
+					thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png'),
+					mediaUrl: 'https://amarok-deploy.vercel.app',
+					sourceUrl: 'https://amarok-deploy.vercel.app',
 					showAdAttribution: true
 					}
 				}
-			}, {quoted: conn.data})																							});
+			}, {quoted: conn.data}) });																						});
