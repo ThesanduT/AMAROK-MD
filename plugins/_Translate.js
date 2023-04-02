@@ -13,7 +13,6 @@
       fromMe: true,
       desc: "Chat Gpt Chat feture",
       dontAddCommandList: true,
-      type: "misc",
       },
    async (conn, match) => {
 
