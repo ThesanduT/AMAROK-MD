@@ -1,4 +1,4 @@
-const Bosco = require('../lib/events')
+const Amarok = require('../lib/events')
 const got = require("got");
 const Heroku = require("heroku-client");
 const Config = require("../config");
