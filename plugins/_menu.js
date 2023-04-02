@@ -139,7 +139,7 @@ Amarok.addCMD({
 ┃
 ┃
 ┗━━━━━━━━━━━╾ᐧᐧᐧᐧ⦿
-`
+`;
    await conn.sendMessage(conn.chatId, {
       image: { url: 'https://telegra.ph/file/6086f101a36f7fc14bff6.png', },
       caption: CMD_MENU.trim(),
@@ -160,4 +160,4 @@ Amarok.addCMD({
 					showAdAttribution: true
 					}
 				}
-			}, {quoted: conn.data});																						});
+			}, {quoted: conn.data})																						});
