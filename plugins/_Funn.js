@@ -67,3 +67,16 @@ return conn.reply(replyf)
 
 )
     
+ //---------------------------------------------------------------------------
+//-----------QUOTES
+//---------------------------------------------------------------------------
+
+Amarok.addCMD({
+            pattern: "question",
+            isOwner: false,
+            desc: "Random Question.",
+        },
+        async(conn, match, text) => {
+            return await conn.reply(`${random_question()}`);
+        }
+    )
