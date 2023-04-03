@@ -1,7 +1,7 @@
 const Bot = require('../lib/events');
 Amarok.addCMD(
 	{
-		pattern: 'jid',
+		pattern: 'jid$',
 		desc: 'get user/group jid',
 		isOwner: false,
 		type: 'misc'
@@ -12,7 +12,7 @@ async (conn, match) => {
 
 Amarok.addCMD(
 	{
-		pattern: 'gjid',
+		pattern: 'gjid$',
 		desc: 'gets jid of all group members',
 		isOwner: false,
 		type: 'group'
@@ -26,7 +26,7 @@ async (conn, match) => {
 	participant.forEach((result) => {
 		str += `┊ ${result}\n`;
 		});
-		str += `└────────────────────𔒝`;
+		str += `└──────────────𔒝`;
 		conn.reply(str);	
 	});
 
