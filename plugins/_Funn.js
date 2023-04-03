@@ -45,3 +45,25 @@ Amarok.addCMD({
         return conn.reply(`*Fact:* ${data.fact}\n\n*Powered by Amarok*`)   
     }
   )
+ //---------------------------------------------------------------------------
+//-----------QUOTES
+//---------------------------------------------------------------------------
+
+Amarok.addCMD({
+        pattern: "quotes",
+        isOwner: false,
+        desc: "Sends quotes in chat.",
+    },
+    async(conn, match, text) => {
+        var quoo = await axios.get(`https://favqs.com/api/qotd`)
+        const replyf = `
+╔════◇
+║ *🎗️Content:* ${quoo.data.quote.body}
+║ *👤Author:* ${quoo.data.quote.author}
+║    
+╚════════════╝ `
+return conn.reply(replyf)
+    }
+
+)
+    
