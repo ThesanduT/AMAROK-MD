@@ -24,7 +24,7 @@
 				},
 				"homepage": "https://github.com/Diegoson/AMAROK-MD #readme",
 				"dependencies": {
-					"@adiwajshing/baileys": "^4.4.0",
+					"@adiwajshing/baileys": "github:adiwajshing/baileys",
 					"@adiwajshing/keyed-db": "^0.2.4",
 					"axios": "^0.24.0",
 					"chalk": "^4.1.2",
