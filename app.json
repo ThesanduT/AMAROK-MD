@@ -32,7 +32,7 @@
 								"required": true },
                                                                 "GPTAPIKEY": {
                                                                         "description": "Add api key for chatgpt",
-                                                                        "required": false
+                                                                        "required": false },
 								"HEROKU": { 
 									"description": "",
 									"value": "true", 
