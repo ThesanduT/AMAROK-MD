@@ -26,7 +26,7 @@ function convertToBool(text, fault = 'true') {
 //             VARS OF AMAROK
 //---------------------------------------------------------------------------------------------------
 
-		SESSION_ID: process.env.SESSION_ID         ||                "Z2pCWGh_AMAROK_iekQ=",
+		SESSION_ID: process.env.SESSION_ID         ||                "",
 
 //---------------------------------------------------------------------------------------------------
 
