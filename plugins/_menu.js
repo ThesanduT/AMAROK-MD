@@ -84,9 +84,9 @@ Amarok.addCMD({
 														);
 														CMD_MENU +=`
 										
-┏━━━━━⟪ ${BOT_NAME} ⟫━━━⦿
-┃ ✗ OWNER : ${OWNER_NAME}
-┃ ✗ PREFIX : ${HANDLERS}
+┏━━━━━⟪ ${config.BOT_NAME} ⟫━━━⦿
+┃ ✗ OWNER : ${config.OWNER_NAME}
+┃ ✗ PREFIX : ${config.HANDLERS}
 ┃ ✗ USER : ${conn.data.pushName}
 ┃ ✗ VERSION : ${pjson.version}
 ┗━━━━━━━━━━━━━━━⦿
