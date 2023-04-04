@@ -1,5 +1,5 @@
-FROM fusuf/whatsasena:latest
-RUN git clone https://github.com/TOXIC-KICHUX/AMAROK-MD /AMAROK-MD
+FROM quay.io/lyfe00011/md:beta
+RUN git clone https://github.com/Diegoson/AMAROK-MD /AMAROK-MD
 WORKDIR /AMAROK-MD
 RUN npm install
-CMD ["node", "index.js"] 
+CMD ["node", "index.js"]
