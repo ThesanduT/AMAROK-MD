@@ -221,7 +221,7 @@ Amarok.addCMD(
 							}
 							);
 
-Bosco.addCMD(
+Amarok.addCMD(
 	{
 		pattern: "update now$",
 		isOwner: true,
