@@ -2,6 +2,7 @@ const Amarok = require('../lib/events')
 const axios = require("axios");
 const Config = require('../config');
 const { BOT_NAME, OWNER_NAME, HANDLERS } = require('../config.js');
+const config = require('../config');
 const pjson = require('../package.json'); 
 const { runtime, getBuffer} = require('../lib/index');
 
