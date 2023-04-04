@@ -2,7 +2,7 @@ const Amarok = require('../lib/events')
 const axios = require("axios");
 const Config = require('../config');
 const pjson = require('../package.json'); 
-const { runtime, getBuffer} = require('../lib/bot');
+const { runtime, getBuffer} = require('../lib/index');
 
 Amarok.addCMD({
 	pattern: 'help',
