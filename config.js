@@ -24,7 +24,7 @@ function convertToBool(text, fault = 'true') {
 		SESSION_ID: process.env.SESSION_ID || "",
 		BLOCKCHAT: process.env.BLOCK_CHAT || "",
 		WORKTYPE: process.env.WORK_TYPE || "private",
-		HANDLERS: process.env.HANDLERS || null,
+		HANDLERS: process.env.HANDLERS || ".",
                 BOT_NAME: process.env.BOT_NAME || "",
                 OWNER_NAME: process.env.OWNER_NAME || "",
 		SUDO: process.env.SUDO || "",
