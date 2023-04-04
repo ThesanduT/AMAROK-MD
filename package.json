@@ -8,21 +8,21 @@
 		},
 		"repository": {
 			"type": "git",
-			"url": "git+https://github.com/pepesir/BOSCO-MD.git"
+			"url": "git+https://github.com/Diegoson/AMAROK-MD.git"
 			},
 			"keywords": [
 			"whatsapp",
 			"bot",
 			"ai",
 			"asena",
-			"Bosco"
+			"Amarok"
 			],
-			"developer": "pepesir",
+			"developer": "cyber",
 			"license": "MIT",
 			"bugs": {
-				"url": "https://github.com/pepesir/BOSCO-MD/issues"
+				"url": "https://github.com/Diegoson/AMAROK-MD/issues"
 				},
-				"homepage": "https://github.com/pepesir/BOSCO-MD #readme",
+				"homepage": "https://github.com/Diegoson/AMAROK-MD #readme",
 				"dependencies": {
 					"@adiwajshing/baileys": "^4.4.0",
 					"@adiwajshing/keyed-db": "^0.2.4",
