@@ -212,7 +212,7 @@ Amarok.addCMD(
 						]
 						let buttonMessage = {
 							text: availupdate,
-							footer: 'bosco-md',
+							footer: 'amarok',
 							buttons: buttons,
 							headerType: 1
 							}
