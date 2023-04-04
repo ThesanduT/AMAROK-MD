@@ -18,7 +18,7 @@ const buttonMessage = {
   buttons: buttons,
   headerType: 1
 }
-return await conn.sendMessage(conn.chatld buttonMessage, {
+return await conn.sendMessage(conn.chatld, buttonMessage, {
  quoted: conn.data
  })
 });
