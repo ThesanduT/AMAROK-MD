@@ -11,7 +11,7 @@
       {
       pattern: "tr",
       fromMe: true,
-      desc: "mics",
+      desc: "misc",
       dontAddCommandList: true,
       },
    async (conn, match) => {
