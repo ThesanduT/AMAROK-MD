@@ -12,12 +12,12 @@ Amarok.addCMD(
 		},
 		async (message, match) => {
 			match = match[1] || message.reply_msg
-			if (!match) return await message.reply("Example:\n\nplugin url");
+			if (!match) return await conn.reply("Example:\n\nplugin url");
 			try {
 				var url = new URL(match);
 				} catch (e) {
 					console.log(e);
-					return await message.reply("_Give valid link_");
+					return await conn.reply("_Give valid link_");
 					}
 					if (url.host === "gist.github.com") {
 						url.host = "gist.githubusercontent.com";
@@ -37,7 +37,7 @@ Amarok.addCMD(
       	require("./" + plugin_name);
       	} catch (e) {
       		fs.unlinkSync(__dirname + "/" + plugin_name + ".js");
-      		return await message.reply("Invalid Plugin\n ```" + e + "```");
+      		return await conn.reply("Invalid Plugin\n ```" + e + "```");
       		}
       		await installPlugin(url, plugin_name);
       		await message.reply(`_New plugin installed : ${plugin_name}_`);
@@ -56,7 +56,7 @@ Amarok.addCMD(
   	var mesaj = "";
   	var plugins = await PluginDB.findAll();
   	if (plugins.length < 1) {
-  		return await message.reply("Plugin not installed");
+  		return await conn.reply("Plugin not installed");
   		} else {
   			plugins.map((plugin) => {
         mesaj +=
@@ -66,7 +66,7 @@ Amarok.addCMD(
           plugin.dataValues.url +
           "\n";
           });
-      return await message.reply(mesaj);
+      return await conn.reply(mesaj);
       }
       }
       );
@@ -80,15 +80,15 @@ Amarok.addCMD(
   },
   async (message, match) => {
   	match = match[1]
-  	if (!match) return await message.reply("_Need a plugin name_");
+  	if (!match) return await conn.reply("_Need a plugin name_");
   	var plugin = await PluginDB.findAll({ where: { name: match } });
   	if (plugin.length < 1) {
-  		return await message.reply("_Plugin not found_");
+  		return await conn.reply("_Plugin not found_");
   		} else {
   			await plugin[0].destroy();
   			delete require.cache[require.resolve("./" + match + ".js")];
   			fs.unlinkSync(__dirname + "/" + match + ".js");
-  			await message.reply(`Plugin ${match} deleted`);
+  			await conn.reply(`Plugin ${match} deleted`);
   			}
   			}
   			);
