@@ -27,7 +27,7 @@ Amarok.addCMD({
 							} else {
 								HANDLER = Config.HANDLERS
 								}
-								CMD_HELP += '' + num++ + '. ' + match + \n'
+								CMD_HELP += '' + num++ + '. ' + match + \n
 								}
 								);
 								await conn.sendMessage(conn.chatId, { text : CMD_HELP.trim() }, { quoted: conn.data });
