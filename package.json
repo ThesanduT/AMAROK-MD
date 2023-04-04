@@ -1,5 +1,5 @@
 {
-	"name": "AMAROK-MD",
+	"name": "amarok-md",
 	"version": "0.0.1",
 	"description": "Amarok bot sponsored with baileys.",
 	"main": "./AMAROK-MD/index.js",
