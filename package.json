@@ -1,6 +1,6 @@
 {
 	"name": "amarok-md",
-	"version": "3.0.5",
+	"version": "0.0.1",
 	"description": "Amarok bot sponsored with baileys.",
 	"main": "./AMAROK-MD/index.js",
 	"scripts": {
