@@ -1,4 +1,4 @@
-<img src = "https://i.ibb.co/7tfJq4q/c47747e2bcb5.jpg"</img>
+<img src= "https://i.ibb.co/7tfJq4q/c47747e2bcb5.jpg"/>
 
 
 # DONT DEPLOY
