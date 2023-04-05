@@ -1,6 +1,7 @@
 const Amarok = require('../lib/events')
 const Config = require('../config')
 const { OWNER_NAME, HANDLERS, BOT_NAME } = require('../config.js')
+const config = require('../config');
 const pjson = require('../package.json')
 const { hostname, uptime } = require('os')
 const { runtime, getBuffer } = require('../lib/index')
