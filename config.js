@@ -27,7 +27,8 @@ function convertToBool(text, fault = 'true') {
 		HANDLERS: process.env.HANDLERS || ".",
                 BOT_NAME: process.env.BOT_NAME || "ᴀᴍαr๏k ᴍᴅ",
                 OWNER_NAME: process.env.OWNER_NAME || "ᴛᴏxɪᴄツ ᴄʏʙᴇʀ",
-		SUDO: process.env.SUDO || "",
+                GPTAPIKEY: process.env.GPTAPIKEY||" ",
+          	SUDO: process.env.SUDO || "",
 		SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
 		BRANCH: 'main',
 		HEROKU: {
