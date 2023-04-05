@@ -32,8 +32,28 @@ Amarok.addCMD({
 								CMD_HELP += '' + num++ + '. ' + match + '\n' + command.desc + '\n\n'
 								}
 								);
-								await conn.sendMessage(conn.chatId, { text : CMD_HELP.trim() }, { quoted: conn.data });
-								});
+								await conn.sendMessage(conn.chatId, { 
+					                           image: { url: 'https://telegra.ph/file/a2c59c0a297f262976506.jpg', },
+							           caption: CMD_HELP.trim(),
+							           footer: `amarok`,
+							           buttons: [
+							          {buttonId: `${PREFIX}ping`, buttonText: {displayText: 'PING'}},
+      {buttonId: `${PREFIX}alive`, buttonText: {displayText: 'ALIVE'}}
+      ], 
+      contextInfo: {
+      	externalAdReply: {
+      		title:  "AMAROK MD",
+      		body: "",
+      		mediaType: 2,
+      		thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png`),
+      		mediaUrl: 'https://github.com/Diegoson',
+      		sourceUrl: 'https://github.com/Diegoson',
+      		showAdAttribution: true
+                                  }
+}
+}, { quoted: conn.data });
+});
+
 
 Amarok.addCMD({
 	pattern: 'menu',
