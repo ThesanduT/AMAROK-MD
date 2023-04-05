@@ -84,22 +84,22 @@ Amarok.addCMD({
 								HANDLER = Config.HANDLERS
 								}
 								if (command.type === 'download') {
-									download += `❒✗ ${HANDLER}${match}\n┊`
+									download += ` ${HANDLER}${match}\n┊`
 									}
 									if (command.type === 'group') {
-										group += `❒✗ ${HANDLER}${match}\n┊`
+										group += ` ${HANDLER}${match}\n┊`
 										}
 										if (command.type === 'heroku') {
-											heroku += `❒✗ ${HANDLER}${match}\n┊`
+											heroku += ` ${HANDLER}${match}\n┊`
 											}
 											if (command.type === 'search') {
-												search += `❒✗ ${HANDLER}${match}\n┊`
+												search += ` ${HANDLER}${match}\n┊`
 												}
 												if (command.type === 'convert') {
-													convert += `❒✗ ${HANDLER}${match}\n┊`
+													convert += ` ${HANDLER}${match}\n┊`
 													}
 													if (command.type === 'misc' || command.type === '' || !command.type === '') {
-														misc += `❒✗ ${HANDLER}${match}\n┊`
+														misc += ` ${HANDLER}${match}\n┊`
 														}         
 														}
 														);
@@ -117,42 +117,42 @@ Amarok.addCMD({
 ┣┫ *❃---- ᴄᴏɴᴠᴇʀᴛᴇʀ ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${convert}
+┃│❒✗  ${convert}
 ┃╰─────────────◆
 ┃
 ┃┏━━━━━━━━━━━━━◆
 ┣┫ *❃---- ᴍɪᴄs ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${misc}
+┃│❒✗  ${misc}
 ┃╰─────────────◆
 ┃
 ┃┏━━━━━━━━━━━━━◆
 ┣┫ *❃---- ɢᴀᴍᴇs ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${games}
+┃│❒✗ ${games}
 ┃╰─────────────◆
 ┃
 ┃┏━━━━━━━━━━━━━◆
 ┣┫ *❃---- ɢʀᴏᴜᴘ ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${group}
+┃│❒✗ ${group}
 ┃╰─────────────◆
 ┃
 ┃┏━━━━━━━━━━━━━◆
 ┣┫ *❃---- ʜᴇʀᴏᴋᴜ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${heroku}
+┃│❒✗ ${heroku}
 ┃╰─────────────◆
 ┃
 ┃┏━━━━━━━━━━━━━◆
 ┣┫ *❃---- ꜱᴇᴀʀᴄʜ ----✯*
 ┃┗┯━━━━━━━━━━━━◆
 ┠┬┤
-┃│   ${search}
+┃│❒✗ ${search}
 ┃╰─────────────◆
 ┃
 ┃
