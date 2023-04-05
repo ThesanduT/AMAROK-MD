@@ -45,7 +45,7 @@ Amarok.addCMD({
       		title:  "AMAROK MD",
       		body: "",
       		mediaType: 2,
-      		thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png'),
+      		thumbnail: await getBuffer('https://i.ibb.co/McTFSwF/497fad5dc89b.jpg'),
       		mediaUrl: 'https://github.com/Diegoson',
       		sourceUrl: 'https://github.com/Diegoson',
       		showAdAttribution: true
@@ -159,7 +159,7 @@ Amarok.addCMD({
 ┗━━━━━━━━━━━╾ᐧᐧᐧᐧ⦿
 `
    await conn.sendMessage(conn.chatId, {
-      image: { url: 'https://telegra.ph/file/6086f101a36f7fc14bff6.png', },
+      image: { url: 'https://i.ibb.co/McTFSwF/497fad5dc89b.jpg', },
       caption: CMD_MENU.trim(),
       footer: `amarok-md`,
       buttons: [
@@ -172,7 +172,7 @@ Amarok.addCMD({
 					title:  "AMAROK-MD",
 					body: "",
 					mediaType: 2,
-					thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png'),
+					thumbnail: await getBuffer('https://i.ibb.co/McTFSwF/497fad5dc89b.jpg'),
 					mediaUrl: 'https://amarok-deploy.vercel.app',
 					sourceUrl: 'https://amarok-deploy.vercel.app',
 					showAdAttribution: true
