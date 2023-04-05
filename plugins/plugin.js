@@ -28,7 +28,8 @@ Amarok.addCMD(
 							var plugin_name;
 							var { body, statusCode } = await got(url);
 							if (statusCode == 200) {
-								var plugin_name = body.match(/addCMD\({.*pattern: ["'](.*)["'].*}/);
+								var comand = body.match(/(?<=pattern:) ["'](.*?)["']/);
+                                                                plugin_name = comand[0].replace(/["']/g, "").trim().split(" ")[0];
 									if (!plugin_name) {
 										plugin_name = "__" + Math.random().toString(36).substring(8);
       }
@@ -80,7 +81,7 @@ Amarok.addCMD(
   },
   async (message, match) => {
   	match = match[1]
-  	if (!match) return await conn.reply("_Need a plugin name_");
+  	if (!match) return await message.reply("_Need a plugin name_");
   	var plugin = await PluginDB.findAll({ where: { name: match } });
   	if (plugin.length < 1) {
   		return await message.reply("_Plugin not found_");
