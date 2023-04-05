@@ -23,7 +23,6 @@ Amarok.addCMD({
  *👤Owner: ${OWNER_NAME}
  *🎗Prefix: ${HANDLERS}
  *🏅Useer: ${conn.data.pushName}
- *🚦Runtime ${runtime(process(uptime())}
  *🚦Working hours: ${clockString (uptime())}
 `
 
