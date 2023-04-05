@@ -29,7 +29,7 @@ Amarok.addCMD({
 							} else {
 								HANDLER = Config.HANDLERS
 								}
-								CMD_HELP += '' + num++ + '. ' + match + '\n' + command.desc + '\n\n'
+								CMD_HELP += '' + num++ +  ' + match + '\n' + command.desc + '\n\n'
 								}
 								);
 								await conn.sendMessage(conn.chatId, { 
@@ -45,7 +45,7 @@ Amarok.addCMD({
       		title:  "AMAROK MD",
       		body: "",
       		mediaType: 2,
-      		thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png`),
+      		thumbnail: await getBuffer('https://telegra.ph/file/6086f101a36f7fc14bff6.png'),
       		mediaUrl: 'https://github.com/Diegoson',
       		sourceUrl: 'https://github.com/Diegoson',
       		showAdAttribution: true
