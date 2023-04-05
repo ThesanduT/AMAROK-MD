@@ -4,4 +4,7 @@
 <h1 align="center">ᴀᴍᴀʀᴏᴋ ᴍᴅ ʙᴏᴛ<br></h1>
 <p align="center">
 
+> DON'T DEPLOY THIS  BOT
+> UNDERSTOOD HUH NICE
 <a href="https://heroku.com/deploy?template=https://github.com/Diegoson/AMAROK-MD/"><img title="SCAN QR" src="https://img.shields.io/badge/DEPLOY-h?color=black&style=for-the-badge&logo=heroku"></a>
+
