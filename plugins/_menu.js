@@ -105,12 +105,12 @@ Amarok.addCMD({
 														);
 														CMD_MENU +=`
 										
-┏━━━━━⟪ ${config.BOT_NAME} ⟫━━━⦿
+┏━━⟪ ${config.BOT_NAME} ⟫━⦿
 ┃ ✗ OWNER : ${config.OWNER_NAME}
 ┃ ✗ PREFIX : ${config.HANDLERS}
 ┃ ✗ USER : ${conn.data.pushName}
 ┃ ✗ VERSION : ${pjson.version}
-┗━━━━━━━━━━━━━━━⦿
+┗━━━━━━━━━⦿
   ╭─❏ ᴄᴏɴᴠᴇʀᴛᴇʀ ❏──
  │ 
  │ ${convert} 
