@@ -1,8 +1,5 @@
 const config = require("../config.js")
 const gptapikey = config.GPTAPIKEY
-const {
-  getJson
-} = require("../lib")
 const Amarok = require("../lib/events")
 
 Amarok.addCMD({
