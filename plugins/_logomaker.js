@@ -1,4 +1,4 @@
-  const Amarok = require('../lib/events');
+/*  const Amarok = require('../lib/events');
   const { getBuffer } = require('../lib');
   
 
@@ -8,3 +8,4 @@
              );
       }
  );
+*/
