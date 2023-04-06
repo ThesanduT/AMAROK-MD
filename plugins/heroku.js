@@ -9,30 +9,9 @@ const { runtime, prefix } = require("../lib/index");
 const git = simpleGit();
 const exec = require("child_process").exec;
 
-              Amarok.addCMD(
-                {                      pattern: "restart",
-                                       isOwner: true,
-                                       type: "heroku"
-             },
-                async(conn,match) => {
-  const buttons = [
-  {buttonId: 'rs', buttonText: {displayText: 'RESTART'}, type: 1},
-  {buttonId: 'st', buttonText: {displayText: 'SHUTDOWN'}, type: 1}
-]
-let buttonMessage = {
-    text: `ᴀᴍᴀʀᴏᴋ ʀᴇsᴛᴀʀᴛ sʏsᴛᴇᴍ`,
-    footer: 'heroku manager',
-    buttons: buttons,
-    headerType: 1
-}
-
-return await conn.sendMessage(conn.chatld, buttonMessage)
-})
-
-
 Amarok.addCMD(
 	{
-		pattern: "rs",
+		pattern: "restart",
 		isOwner: true,
 		desc: "Restart Bot",
 		type: "heroku",
@@ -47,7 +26,7 @@ Amarok.addCMD(
 
 Amarok.addCMD(
 	{
-		pattern: "st",
+		pattern: "shutdown",
 		isOwner: true,
 		desc: "Dyno off",
 		type: "heroku",
