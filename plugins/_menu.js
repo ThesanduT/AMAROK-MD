@@ -83,8 +83,8 @@ Amarok.addCMD({
 							} else {
 								HANDLER = Config.HANDLERS
 								}
-								if (command.type === 'download') {
-									download += `❒✗ ${HANDLER}${match}\n┊`
+								if (command.type === 'games') {
+									games += `❒✗ ${HANDLER}${match}\n┊`
 									}
 									if (command.type === 'group') {
 										group += `❒✗ ${HANDLER}${match}\n┊`
@@ -95,8 +95,11 @@ Amarok.addCMD({
 											if (command.type === 'search') {
 												search += `❒✗ ${HANDLER}${match}\n┊`
 												}
-												if (command.type === 'convert') {
+                                                                                                if (command.type === 'convert') {
 													convert += `❒✗ ${HANDLER}${match}\n┊`
+													}
+												       if (command.type === 'logomaker') {
+													logomaker += `❒✗ ${HANDLER}${match}\n┊`
 													}
 													if (command.type === 'misc' || command.type === '' || !command.type === '') {
 														misc += `❒✗ ${HANDLER}${match}\n┊`
@@ -134,6 +137,10 @@ Amarok.addCMD({
 ┌─『 ɢᴀᴍᴇs 』─❖
 │
 │${games}
+└─────────◉
+┌─『 ɢᴀᴍᴇs 』─❖
+│
+│${logomaker}
 └─────────◉
  `
    await conn.sendMessage(conn.chatId, {
