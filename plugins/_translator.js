@@ -39,4 +39,5 @@
          key: conn.key
    }
  }
+ await conn.sendMessage(conn.chatld, reactionMessage)
    })
