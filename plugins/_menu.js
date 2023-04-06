@@ -70,7 +70,7 @@ Amarok.addCMD({
 		let search = ''
 		let convert = ''
                 let logomaker = ''
-                let user ''
+                let user = ''
 		Amarok.commands.map(
 			async (command) =>  {
 				if (command.dontAddCommandList || command.pattern === undefined) return;
