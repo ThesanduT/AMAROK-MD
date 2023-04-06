@@ -24,7 +24,6 @@ Amarok.addCMD({
  *👤Owner: ${config.OWNER_NAME}
  *🎗Prefix: ${config.HANDLERS}
  *🏅Useer: ${conn.data.pushName}
- *🚦Working hours: ${clockString (uptime())}
 `
 
 await conn.sendMessage(conn.chatId, {
