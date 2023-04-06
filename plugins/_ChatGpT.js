@@ -1,5 +1,5 @@
 const config = require("../config.js")
-const fetch = require('fatch-node')
+const fetch = require('fetch-node')
 const gptapikey = config.GPTAPIKEY
 const Amarok = require("../lib/events")
 
