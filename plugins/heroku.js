@@ -26,7 +26,7 @@ let buttonMessage = {
     headerType: 1
 }
 
-await conn.sendMessage(conn.chatld, buttonMessage)
+return await conn.sendMessage(conn.chatld, buttonMessage)
 })
 
 
