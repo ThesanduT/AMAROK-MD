@@ -70,6 +70,7 @@ Amarok.addCMD({
 		let search = ''
 		let convert = ''
                 let logomaker = ''
+                let user ''
 		Amarok.commands.map(
 			async (command) =>  {
 				if (command.dontAddCommandList || command.pattern === undefined) return;
@@ -102,6 +103,7 @@ Amarok.addCMD({
 												       if (command.type === 'logomaker') {
 													logomaker += `❒✗ ${HANDLER}${match}\n┊`
 													}
+                                                                                                        if (command.type === 'user') { user +=` ❒✗ ${HANDLER}${match} \n┊` }
 													if (command.type === 'misc' || command.type === '' || !command.type === '') {
 														misc += `❒✗ ${HANDLER}${match}\n┊`
 														}         
@@ -142,6 +144,10 @@ Amarok.addCMD({
 ┌─『 ʟᴏɢᴏᴍᴀᴋᴇʀ 』─❖
 │
 │${logomaker}
+└─────────◉
+┌─『 ᴜꜱᴇʀ 』─❖
+│
+│${user}
 └─────────◉
  `
    await conn.sendMessage(conn.chatId, {
