@@ -9,7 +9,7 @@
            async(conn,match) => {
           
          const chatld =
-             conn.mention[0] ||
+             let chatld = conn.mention[0] ||
              conn.reply_message.chatld ||
              (!conn.isGroup && conn.chatld)
              if (!chatld) return await conn.sendMessage("_mention user to block_");
