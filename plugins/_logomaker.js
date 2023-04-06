@@ -1,5 +1,5 @@
   const Amarok = require('../lib/events');
-  const { getBuffer } require('../lib');
+  const { getBuffer } = require('../lib');
   
 
 
