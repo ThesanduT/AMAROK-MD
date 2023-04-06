@@ -69,6 +69,7 @@ Amarok.addCMD({
 		let heroku = ''
 		let search = ''
 		let convert = ''
+                let logomaker = ''
 		Amarok.commands.map(
 			async (command) =>  {
 				if (command.dontAddCommandList || command.pattern === undefined) return;
