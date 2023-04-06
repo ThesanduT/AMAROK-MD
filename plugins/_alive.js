@@ -20,6 +20,8 @@ Amarok.addCMD({
  
 
  *🚦Botname: ${config.BOT_NAME}
+ *⌚Date: ${date}
+ *🏅Time: ${time}
  *🕸Version: ${pjson.version}
  *👤Owner: ${config.OWNER_NAME}
  *🎗Prefix: ${config.HANDLERS}
