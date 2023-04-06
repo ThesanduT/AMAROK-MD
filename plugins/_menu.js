@@ -84,22 +84,22 @@ Amarok.addCMD({
 								HANDLER = Config.HANDLERS
 								}
 								if (command.type === 'download') {
-									download += ` ${HANDLER}${match}\n┊`
+									download += `❒✗ ${HANDLER}${match}\n┊`
 									}
 									if (command.type === 'group') {
-										group += ` ${HANDLER}${match}\n┊`
+										group += `❒✗ ${HANDLER}${match}\n┊`
 										}
 										if (command.type === 'heroku') {
-											heroku += ` ${HANDLER}${match}\n┊`
+											heroku += `❒✗ ${HANDLER}${match}\n┊`
 											}
 											if (command.type === 'search') {
-												search += ` ${HANDLER}${match}\n┊`
+												search += `❒✗ ${HANDLER}${match}\n┊`
 												}
 												if (command.type === 'convert') {
-													convert += ` ${HANDLER}${match}\n┊`
+													convert += `❒✗ ${HANDLER}${match}\n┊`
 													}
 													if (command.type === 'misc' || command.type === '' || !command.type === '') {
-														misc += ` ${HANDLER}${match}\n┊`
+														misc += `❒✗ ${HANDLER}${match}\n┊`
 														}         
 														}
 														);
@@ -111,25 +111,30 @@ Amarok.addCMD({
 ┃ ✗ USER : ${conn.data.pushName}
 ┃ ✗ VERSION : ${pjson.version}
 ┗━━━━━━━━━⦿
-  ╭─❏ ᴄᴏɴᴠᴇʀᴛᴇʀ ❏──
- │ 
- │    ${convert} 
- ╰────────
- ╭─❏ɢᴀᴍᴇs ❏─
- │ 𝙰𝙲 ${games}𝙸𝚉𝚄𝙺𝚄
- ╰────────
- ╭─❏ ᴍɪᴄs ❏─
- │     ${misc}
- ╰────────
- ╭─❏ ʜᴇʀᴏᴋᴜ ❏─
- │   ${heroku}𝚄𝙱𝙶𝙰𝙼𝙴𝙿𝙿
- ╰────────
- ╭─❏ ꜱᴇᴀʀᴄʜ ❏─
- │ 𝙰𝙲 ${search}𝙸𝚉𝚄𝙺𝚄
- ╰────────
- ╭─❏ɢʀᴏᴜᴘ ❏─
- │ 𝙰𝙲 ${group}𝙸𝚉𝚄𝙺𝚄
- ╰────────
+┌─『 ᴄᴏɴᴠᴇʀᴛᴇʀ 』─❖
+│
+│${convert}
+└─────────◉
+┌─『 ᴍɪᴄs 』─❖
+│
+│${misc}
+└─────────◉
+┌─『 ʜᴇʀᴏᴋᴜ 』─❖
+│
+│${heroku}
+└─────────◉
+┌─『 ɢʀᴏᴜᴘ 』─❖
+│
+│${group}
+└─────────◉
+┌─『 ꜱᴇᴀʀᴄʜ 』─❖
+│
+│${search}
+└─────────◉
+┌─『 ɢᴀᴍᴇs 』─❖
+│
+│${games}
+└─────────◉
  `
    await conn.sendMessage(conn.chatId, {
       image: { url: 'https://i.ibb.co/McTFSwF/497fad5dc89b.jpg', },
