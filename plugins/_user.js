@@ -15,5 +15,14 @@
              if (!chatld) return await conn.sendMessage("_mention user to block_");
              await conn.sendMessage("_Blocked Successfully_");
              await conn.Block(chatld)
-    }
- )
+    
+       const reactionMessage = {
+           react: {
+           text: "🚫",
+           key: conn.key
+     }
+  }
+await conn.sendMessage(conn.chatld, reactionMessage)
+ })
+ 
+      
