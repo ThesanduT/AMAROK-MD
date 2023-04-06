@@ -26,6 +26,7 @@
 				"dependencies": {
 					"@adiwajshing/baileys": "^4.4.0",
 					"@adiwajshing/keyed-db": "^0.2.4",
+                                        "@vitalets/google-translate-api": "^9.0.0",
 					"axios": "^0.24.0",
 					"chalk": "^4.1.2",
 					"cheerio": "^1.0.0-rc.10",
@@ -54,6 +55,7 @@
 					"pg": "^8.7.3",
 					"pino": "^7.0.5",
 					"pm2": "^5.2.0",
+                                        "translate-google-api": "^1.0.4",
 					"qrcode-terminal": "^0.12.0",
 					"link-preview-js":"2.1.15",
 					"scrape-primbon": "^1.1.0",
