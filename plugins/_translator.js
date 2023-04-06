@@ -13,7 +13,6 @@
       isOwner: false,
       desc: "Chat Gpt Chat feture",
       type: "user",
-      dontAddCommandList: true,
       },
    async (conn, match) => {
 
@@ -33,5 +32,11 @@
          autoCorrect: true
       }).catch(_ => null)
       conn.sendMessage(result.text)
-
+  
+      const reactionMessage = {
+         react: {
+         text: "😂",
+         key: conn.key
+   }
+ }
    })
