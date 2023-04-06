@@ -1,5 +1,6 @@
 const config = require("../config.js")
 const fetch = require('node-fetch')
+const { fetchJson } = require('../lib')
 const gptapikey = config.GPTAPIKEY
 const Amarok = require("../lib/events")
 
