@@ -19,7 +19,7 @@
 
       // if (!match || !m.quoted.text)  await conn.sendMessage(`📌 *Example:*\n\n*tr* <lang> [text]\n*tr* ar Hello World`)
 
-      let args = match.split(' ')
+      let args = conn.split(' ')
       let lang = args[0]
       let text = args.slice(1).join(' ')
       if ((args[0] || '').length !== 2) {
