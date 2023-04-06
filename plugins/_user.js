@@ -1,5 +1,6 @@
          const Amarok = require('../lib/events');
-       
+         const isUser = require('../lib');
+
          Amarok.addCMD({
                 pattern: "block",
                 isOwner: true,
