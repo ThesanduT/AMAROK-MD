@@ -12,6 +12,7 @@
       pattern: "tr",
       isOwner: false,
       desc: "Chat Gpt Chat feture",
+      type: "user",
       dontAddCommandList: true,
       },
    async (conn, match) => {
