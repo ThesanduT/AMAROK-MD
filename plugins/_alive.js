@@ -28,7 +28,7 @@ Amarok.addCMD({
 
 await conn.sendMessage(conn.chatId, {
       image: { url: 'https://i.ibb.co/6yVCHcL/38aa5206e8bc.jpg', },
-      caption: CMD_MENU.trim(),
+      caption: CMD_ALIVE.trim(),
       footer: `amarok-md`,
       buttons: [
         {buttonId: `${PREFIX}menu`, buttonText: {displayText: 'MENU'}},
