@@ -14,6 +14,14 @@ async (conn, match) => {
 	await conn.sendMessage(conn.chatId, {text:'Ꮪᴘᴇᴇᴅ Sᴘᴏʀᴛɪɴɢ'});
 	var end = new Date().getTime();
 	await conn.reply('GeττᎥng ' + (end - start) + 'ᴍs');
+ const reactionMessage = {
+         react: {
+         text: "🕊",
+         key: conn.key
+   }
+ }
+ await conn.sendMessage(conn.chatld, reactionMessage)
+       
 	});
 
 Amarok.addCMD(
@@ -25,4 +33,12 @@ Amarok.addCMD(
 },
 async (conn, match) => {
 	await conn.reply(runtime(process.uptime()))
+ 
+const reactionMessage = {
+         react: {
+         text: "♻",
+         key: conn.key
+   }
+ }
+ await conn.sendMessage(conn.chatld, reactionMessage)
 	});
