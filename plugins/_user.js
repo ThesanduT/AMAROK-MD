@@ -1,7 +1,6 @@
-         const Amarok = require('../lib");
+         const Amarok = require('../lib/events');
        
-
-        Amarok.addCMD({
+         Amarok.addCMD({
                 pattern: "block",
                 isOwner: true,
                 type: "user",
@@ -16,4 +15,4 @@
              await conn.sendMessage("_Blocked Successfully_");
              await conn.Block(chatld)
     }
- );
+ )
