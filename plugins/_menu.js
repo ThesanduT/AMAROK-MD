@@ -33,7 +33,7 @@ Amarok.addCMD({
 								}
 								);
 								await conn.sendMessage(conn.chatId, { 
-					                           image: { url: 'https://telegra.ph/file/a2c59c0a297f262976506.jpg', },
+					                           image: { url: 'https://i.ibb.co/McTFSwF/497fad5dc89b.jpg', },
 							           caption: CMD_HELP.trim(),
 							           footer: `amarok`,
 							           buttons: [
@@ -114,7 +114,6 @@ Amarok.addCMD({
 ┏━━⟪ ${config.BOT_NAME} ⟫━⦿
 ┃ ✗ OWNER : ${config.OWNER_NAME}
 ┃ ✗ PREFIX : ${config.HANDLERS}
-┃ ✗ MODE: ${WORK_TYPE}
 ┃ ✗ USER : ${conn.data.pushName}
 ┃ ✗ VERSION : ${pjson.version}
 ┗━━━━━━━━━⦿
