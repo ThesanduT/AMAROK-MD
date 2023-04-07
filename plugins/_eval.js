@@ -12,7 +12,6 @@ const {
   fetchText,
   mYtld,
   webp2mp4File,
-  Amarok,
 } = require("../lib/");
 const util = require("util");
 const config = require("../config");
