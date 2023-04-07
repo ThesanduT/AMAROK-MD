@@ -1,18 +1,8 @@
-const config = require("../config.js")
-const fetch = require('node-fetch')
-const { fetchJson } = require('../lib')
-const gptapikey = config.GPTAPIKEY
-const Amarok = require("../lib/events")
+//------------------
+//-------OPEN AI 
+//-------FOR SCHOOL
+//---------------BY TOXIC CYBER 
+//------DIEGOSON DEMANDED
+//--------------------------------
 
-Amarok.addCMD({
-  pattern: "ai ?(.*)",	
-  isOwner: false,
-  type: 'search',
-}, 
-async (conn, match) => {
-if (!match) return await conn.sendMessage("_need text example ai who is diegoson_");
-var api  = await fetchJson(`https://api-viper-x0.vercel.app/api/openai?openaiapikey=${gptapikey}&text=${match}`)
-
-await conn.reply(api.data.text);
-
-});
+const amarok_0x24ce64=amarok_0x2c88;function amarok_0x2c88(_0x3cb8d3,_0xb6a509){const _0x3fb213=amarok_0x3fb2();return amarok_0x2c88=function(_0x2c888a,_0x266c88){_0x2c888a=_0x2c888a-0xc7;let _0x2821d9=_0x3fb213[_0x2c888a];return _0x2821d9;},amarok_0x2c88(_0x3cb8d3,_0xb6a509);}(function(_0x53d19b,_0x37b7cd){const _0x3381ff=amarok_0x2c88,_0x4f3325=_0x53d19b();while(!![]){try{const _0x47dd50=parseInt(_0x3381ff(0xd0))/0x1+parseInt(_0x3381ff(0xca))/0x2*(-parseInt(_0x3381ff(0xc9))/0x3)+parseInt(_0x3381ff(0xce))/0x4+parseInt(_0x3381ff(0xcb))/0x5+parseInt(_0x3381ff(0xd7))/0x6+parseInt(_0x3381ff(0xd4))/0x7+-parseInt(_0x3381ff(0xcc))/0x8;if(_0x47dd50===_0x37b7cd)break;else _0x4f3325['push'](_0x4f3325['shift']());}catch(_0x2d8ddc){_0x4f3325['push'](_0x4f3325['shift']());}}}(amarok_0x3fb2,0xe4545));const config=require(amarok_0x24ce64(0xd2)),fetch=require(amarok_0x24ce64(0xda)),{fetchJson}=require(amarok_0x24ce64(0xc7)),gptapikey=config[amarok_0x24ce64(0xd1)],Amarok=require('../lib/events');function amarok_0x3fb2(){const _0x4b4698=['6TtcsuQ','3378190AXygfe','22299576BCMYET','search','7264412lnikKu','&text=','931607kCjiEF','GPTAPIKEY','../config.js','sendMessage','2025576lUcZlH','https://api-viper-x0.vercel.app/api/openai?openaiapikey=','text','4485306AtoAaY','data','addCMD','node-fetch','../lib','_need\x20text\x20example\x20ai\x20who\x20is\x20diegoson_','737583LuplLt'];amarok_0x3fb2=function(){return _0x4b4698;};return amarok_0x3fb2();}Amarok[amarok_0x24ce64(0xd9)]({'pattern':'ai\x20?(.*)','isOwner':![],'type':amarok_0x24ce64(0xcd)},async(_0x322be7,_0x599b68)=>{const _0x92c1a7=amarok_0x24ce64;if(!_0x599b68)return await _0x322be7[_0x92c1a7(0xd3)](_0x92c1a7(0xc8));var _0x31090d=await fetchJson(_0x92c1a7(0xd5)+gptapikey+_0x92c1a7(0xcf)+_0x599b68);await _0x322be7['reply'](_0x31090d[_0x92c1a7(0xd8)][_0x92c1a7(0xd6)]);});
