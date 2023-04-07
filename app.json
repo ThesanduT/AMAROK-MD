@@ -27,7 +27,11 @@
 							"description": "prefix !",
 							"value": "^[.,]", 
 							"required": true },
-							"SEND_READ": {
+                                                       "GPTAPIKEY": {
+                                                                 "description": "Get your GPTAPIKEY here https://platform.openai.com/account/api-keys",
+                                                                 "value": "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",
+                                                                 "required": true },
+                       					"SEND_READ": {
 								"description": "If entered true , bot will mark messages as read",
 								"value": "true", 
 								"required": true },
