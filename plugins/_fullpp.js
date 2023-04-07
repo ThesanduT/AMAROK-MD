@@ -1,3 +1,5 @@
+const Amarok = require('../lib/events')
+
 Amarok.addCMD(
 	{
 		pattern: 'fullpp ?(.*)',
