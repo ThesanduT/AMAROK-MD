@@ -1,5 +1,5 @@
 
-
+const Amarok = require('../lib/events');
 const {
   fromBuffer,
   getBuffer,
