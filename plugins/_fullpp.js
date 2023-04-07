@@ -7,7 +7,7 @@ Amarok.addCMD(
 		desc: 'Full Screen Dp ',
 		type: 'user',
 	},
-async (conn match,m) => {
+async (conn, match,m) => {
     if (!conn.reply_message.image)
       return await conn.reply("_Reply to a photo_");
     let media = await m.quoted.download();
