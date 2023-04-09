@@ -22,6 +22,7 @@ const git = simpleGit();
 const { smsg, getBuffer } = require('./lib/myfunc')
 const { parsejid } = require('./lib/index');
 var pjson = require('./package.json');
+var WORKTYPE = require('./config.js');
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 //Prefix
