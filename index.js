@@ -163,7 +163,7 @@ if ((command.on !== undefined && (command.on === 'image' || command.on === 'phot
 							await command.
 							function(conn, match);
 							} catch (error) {
-								let errtex = `~_________~ 𝐄𝐑𝐑𝐎𝐑 𝐑𝐄𝐏𝐎𝐑𝐓 ~______~ \n\nCommand : ${command.pattern} \nMessage : ${match[0]} \n${error} \nJid : ${conn.data.key.remoteJid}`
+								let errtex = `~_________~ 𝐄𝐑𝐑𝐎𝐑 𝐑𝐄𝐏𝐎𝐑𝐓 ~______~ \n\nCommand : ${command.pattern} \nMessage : Undefined \n${error} \nJid : ${conn.data.key.remoteJid}`
 								await conn.sendMessage(conn.user.id, { text : errtex } );
 								console.log(error)
 								}
