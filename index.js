@@ -21,6 +21,7 @@ const simpleGit = require('simple-git');
 const git = simpleGit();
 const { smsg, getBuffer } = require('./lib/myfunc')
 const { parsejid } = require('./lib/index');
+const {multiauthState} = require('./lib/multiauth');
 var pjson = require('./package.json');
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
