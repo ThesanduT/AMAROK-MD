@@ -22,7 +22,6 @@ const git = simpleGit();
 const { smsg, getBuffer } = require('./lib/myfunc')
 const { parsejid } = require('./lib/index');
 var pjson = require('./package.json');
-var WORKTYPE = require('./config.js');
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 //Prefix
@@ -117,7 +116,7 @@ if (!fs.existsSync("./session.json")) {
   													require('./plugins/' + plugin);
   													}
   													});
-  													let rtext = `\n\n     BOT STARTED RUNNING \n\n𔔁 PREFIX    : ${config.HANDLERS} \n𔔁MODE : ${Config.WORKTYPE} \n𔔁 VERSION   : ${pjson.version} \n𔔁 PLUGINS   : ${events.commands.length}` 
+  													let rtext = `\n\n     BOT STARTED RUNNING \n\n𔔁 PREFIX    : ${config.HANDLERS} \n𔔁 VERSION   : ${pjson.version} \n𔔁 PLUGINS   : ${events.commands.length}` 
   													await conn.sendMessage(conn.user.id,{ text : rtext })
   													console.log(rtext)
   													}
