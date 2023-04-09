@@ -4,7 +4,7 @@ const { default: makeWASocket,
 	DisconnectReason,
 	getContentType,        
         makeInMemoryStore,
-        useMultiFileAuthState } = require('@adiwajshing/baileys')
+        useSingleFileAuthState } = require('@adiwajshing/baileys')
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const { MakeSession } = require("./lib/session")
 const pino = require('pino');
@@ -21,7 +21,6 @@ const simpleGit = require('simple-git');
 const git = simpleGit();
 const { smsg, getBuffer } = require('./lib/myfunc')
 const { parsejid } = require('./lib/index');
-const {multiauthState} = require('./lib/multiauth');
 var pjson = require('./package.json');
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
@@ -72,7 +71,7 @@ if (!fs.existsSync("./session.json")) {
     									async function AMAROK() { 
     										await config.DATABASE.sync();
     										console.log('Connecting...');
-    										const { state, saveState } = useMultiFileAuthState(
+    										const { state, saveState } = useSingleFileAuthState(
     "./session.json",
     pino({ level: "silent" })
   );
