@@ -4,7 +4,7 @@ const { default: makeWASocket,
 	DisconnectReason,
 	getContentType,        
         makeInMemoryStore,
-        useSingleFileAuthState } = require('@adiwajshing/baileys')
+        useMultiFileAuthState } = require('@adiwajshing/baileys')
 const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const { MakeSession } = require("./lib/session")
 const pino = require('pino');
@@ -71,7 +71,7 @@ if (!fs.existsSync("./session.json")) {
     									async function AMAROK() { 
     										await config.DATABASE.sync();
     										console.log('Connecting...');
-    										const { state, saveState } = useSingleFileAuthState(
+    										const { state, saveState } = useMultiFileAuthState(
     "./session.json",
     pino({ level: "silent" })
   );
@@ -116,7 +116,7 @@ if (!fs.existsSync("./session.json")) {
   													require('./plugins/' + plugin);
   													}
   													});
-  													let rtext = `\n\n     BOT STARTED RUNNING \n\n𔔁 PREFIX    : ${config.HANDLERS} \n𔔁 VERSION   : ${pjson.version} \n𔔁 PLUGINS   : ${events.commands.length}` 
+  													let rtext = `\n\n     BOT STARTED RUNNING \n\n𔔁 PREFIX    : ${config.HANDLERS} \n𔔁MODE : ${Config.WORKTYPE} \n𔔁 VERSION   : ${pjson.version} \n𔔁 PLUGINS   : ${events.commands.length}` 
   													await conn.sendMessage(conn.user.id,{ text : rtext })
   													console.log(rtext)
   													}
