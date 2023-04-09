@@ -113,6 +113,7 @@ Amarok.addCMD({
 										
 ┏━━⟪ ${config.BOT_NAME} ⟫━⦿
 ┃ ✗ OWNER : ${config.OWNER_NAME}
+┃ ✗ MODE: ${Config.WORKTYPE}
 ┃ ✗ PREFIX : ${config.HANDLERS}
 ┃ ✗ USER : ${conn.data.pushName}
 ┃ ✗ VERSION : ${pjson.version}
