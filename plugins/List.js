@@ -44,7 +44,7 @@
     buttonText: "ꜱᴇʟᴇᴄᴛ ϻᴇnu:)",
 sections 
 }
-return await conn.sendMessage(conn.chatld, listMessage, { react: { text: "🫂", key: conn.key,
+ await conn.sendMessage(conn.chatld, listMessage, {react: {text: "🫂", key: conn.key,
   quoted: conn.data
  }})
 });
