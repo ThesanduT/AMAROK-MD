@@ -1,6 +1,6 @@
  const Amarok = require('../lib/events')
  const Config = require('../config')
- const config = require('../config')
+ const config = require('../config.js')
 
 
  const { hostname, uptime } = require("os");
