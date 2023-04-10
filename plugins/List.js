@@ -40,7 +40,7 @@
 *││ USER : ${conn.data.pushName}*
 *││ VERSION : ${pjson.version}
 *│╰──㋰*
-*╰───────────㋰*`
+*╰───────────㋰*`,
     buttonText: "ꜱᴇʟᴇᴄᴛ ϻᴇnu:)",
 sections 
 }
