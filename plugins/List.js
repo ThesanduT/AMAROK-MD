@@ -1,5 +1,5 @@
-const Amarok = require('./lib/events')
-const Config = require('../config')
+ const Amarok = require('../lib/events')
+ const Config = require('../config')
  const config = require('../config')
 
 
@@ -38,7 +38,7 @@ const Config = require('../config')
     text:`*╭───────────㋰*
 *│╭──[ ${config.BOT_NAME} ]──㋰*
 *││ USER : ${conn.data.pushName}*
-*││ VERSION : ${pjson../package.json'}
+*││ VERSION : ${pjson.version}
 *│╰──㋰*
 *╰───────────㋰*`
     buttonText: "ꜱᴇʟᴇᴄᴛ ϻᴇnu:)",
