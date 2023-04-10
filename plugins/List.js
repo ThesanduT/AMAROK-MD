@@ -1,7 +1,7 @@
  const Amarok = require('../lib/events')
  const Config = require('../config')
  const config = require('../config.js')
-
+ const pjson = require('../package.json')
 
  const { hostname, uptime } = require("os");
   Amarok.addCMD(
