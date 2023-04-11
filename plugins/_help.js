@@ -37,6 +37,4 @@ Amarok.addCMD({
 							           caption: CMD_HELP.trim(),							           footer: `amarok`,
 							           caption: 'amarok',
    
-	   }}
-			})
-});
+	   )
