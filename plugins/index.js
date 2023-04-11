@@ -15,7 +15,7 @@ async (conn, match) => {
 	var end = new Date().getTime();
 	await conn.reply('GeττᎥng ' + (end - start) + 'ᴍs');
          
- await conn.sendMessage(conn.chatld, { react: { text: '😎', key: conn.key 
+ await conn.sendMessage(conn.chatld, { react: { text: '😎', key: conn.key,
 					       }});
 
 Amarok.addCMD(
