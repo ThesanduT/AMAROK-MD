@@ -16,7 +16,7 @@ async (conn, match) => {
 	await conn.reply('GeττᎥng ' + (end - start) + 'ᴍs');
          
  await conn.sendReact('😙',
-	}));
+	});
 
 Amarok.addCMD(
 	{
