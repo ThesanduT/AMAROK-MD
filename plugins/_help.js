@@ -38,4 +38,4 @@ Amarok.addCMD({
 							           caption: 'amarok',
    
 	   }}
-)
+);
