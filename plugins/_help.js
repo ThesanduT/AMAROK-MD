@@ -35,6 +35,6 @@ Amarok.addCMD({
 	                                                           image: { url: 'https://i.ibb.co/yskjc2Q/0e24566a0b06.jpg', },
 							           caption: CMD_HELP.trim(),							           footer: `amarok`,
 							           caption: 'amarok',
-   )
+   
 	   }
 			  )
