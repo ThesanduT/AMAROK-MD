@@ -38,3 +38,4 @@ Amarok.addCMD({
    
 	   }
 			  )
+)
