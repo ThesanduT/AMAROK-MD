@@ -1,3 +1,4 @@
+
 const Amarok = require('../lib/events');
 const Config = require('../config');
 const pjsom = require('../package.json');
@@ -37,5 +38,5 @@ Amarok.addCMD({
 							           caption: 'amarok',
    
 	   }
-			  )
-)
+			})
+});
