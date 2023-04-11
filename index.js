@@ -98,8 +98,8 @@ if (!fs.existsSync("./session.json")) {
   							AMAROK()
   							}
   							}else if (connection === 'open') {
-  								console.log('conected ✅')
-  								console.log('⬇️ Installing external plugins...');
+  								console.log('👩 Login successful! ▶')
+  								console.log('💫Loading external plugins wait...▶');
   								var plugins = await plugindb.PluginDB.findAll();
   								plugins.map(async (plugin) => {
   									if (!fs.existsSync('./plugins/' + plugin.dataValues.name + '.js')) {
@@ -110,7 +110,7 @@ if (!fs.existsSync("./session.json")) {
   											}     
   											}
   											});
-  											console.log('⬇️ Installing plugins...');
+  											console.log('♻ Reload plugins▶ ...');
   											fs.readdirSync('./plugins').forEach(plugin => {
   												if(path.extname(plugin).toLowerCase() == '.js') {
   													require('./plugins/' + plugin);
